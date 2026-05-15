@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Stay In",
+    "slug": "HOTEL",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logoapp.png",
+    "scheme": "hotel",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.hotel.app",
+      "usesCleartextTraffic": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+        }
+      },
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/logoapp.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/logoapp.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logoapp.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#EAE5E0",
+          "dark": {
+            "backgroundColor": "#EAE5E0"
+          }
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "81719271-575d-4c92-9a33-892086d37cfa"
+      }
+    },
+    "owner": "yobro119"
+  }
+}
